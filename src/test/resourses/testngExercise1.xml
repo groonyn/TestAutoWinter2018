@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DataProviderSuite" verbose="1" parallel="methods" thread-count="2">
+<test name="DataProviderTest">
+    <groups>
+    </groups>
+    <classes>
+        <class name="ex2.exercise1.DataProviderTextTest"/>
+    </classes>
+</test>
+</suite>

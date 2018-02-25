@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenide_PageObjects_ex5" verbose="1" >
+    <test name="Selenide_test_for_ex5" thread-count="2" parallel="methods" >
+        <classes>
+            <class name="ex4_ex5.LoginPageTest"/>
+            <class name="ex4_ex5.SlidersTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeSuite" verbose="1" thread-count="2" parallel="tests">
+    <test name="SmokeTest">
+        <groups>
+            <run>
+                <include name="smokeTests"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="ex2.exercise2"/>
+        </packages>
+    </test>
+</suite>

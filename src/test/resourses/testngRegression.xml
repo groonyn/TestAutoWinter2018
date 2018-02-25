@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite" verbose="1" thread-count="2" parallel="tests">
+    <test name="RegressionTest">
+        <groups>
+            <run>
+                <include name="regressionTests"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="ex2.exercise2"/>
+        </packages>
+    </test>
+</suite>
