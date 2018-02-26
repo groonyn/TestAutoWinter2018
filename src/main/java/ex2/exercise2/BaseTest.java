@@ -10,11 +10,10 @@ public abstract class BaseTest {
     protected WebDriver driver;
 
     @BeforeSuite(alwaysRun = true)
-    public void  setUp() throws InterruptedException {
+    public void  setUp() {
         System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.navigate().to("https://jdi-framework.github.io/tests/index.htm");
-        driver.wait(3000);
     }
 
     @AfterSuite(alwaysRun = true)
