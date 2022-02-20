@@ -7,8 +7,8 @@ public abstract class SelenideBase {
     @BeforeSuite
     public void setUpSuite() {
         Configuration.browser = "chrome";
-        Configuration.startMaximized = true;
+//        Configuration.startMaximized = true;
         Configuration.pollingInterval = 200;
-        Configuration.collectionsPollingInterval = 300;
+//        Configuration.collectionsPollingInterval = 300;
     }
 }

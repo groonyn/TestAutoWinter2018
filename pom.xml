@@ -75,32 +75,32 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.11</version>
+            <version>7.5</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.8.1</version>
+            <version>4.1.2</version>
         </dependency>
 
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>4.10</version>
+            <version>6.3.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>4.10</version>
+            <version>6.3.0</version>
         </dependency>
 
         <dependency>
             <groupId>ru.yandex.qatools.allure</groupId>
             <artifactId>allure-testng-adaptor</artifactId>
-            <version>1.5.2</version>
+            <version>1.5.4</version>
         </dependency>
 
         <dependency>

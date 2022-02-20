@@ -1,6 +1,7 @@
 package ex4_ex5;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import ex4_ex5.bases.SelenideBase;
 import ex4_ex5.enums.ServiceElementsEnum;
 import ex4_ex5.enums.TextsBelowImagesEnum;
@@ -14,7 +15,6 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 
-import static com.codeborne.selenide.Selenide.close;
 import static ex4_ex5.enums.CheckboxEnum.WATER;
 import static ex4_ex5.enums.CheckboxEnum.WIND;
 import static ex4_ex5.enums.ColoursEnum.COLORS;
@@ -41,7 +41,7 @@ public class LoginPageTest extends SelenideBase {
 
     @AfterMethod(alwaysRun = true)
     public void shutDown() {
-        close();
+        WebDriverRunner.getWebDriver().close();
     }
 
     @Test

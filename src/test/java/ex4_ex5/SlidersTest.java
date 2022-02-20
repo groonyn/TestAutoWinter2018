@@ -1,6 +1,7 @@
 package ex4_ex5;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import ex4_ex5.bases.SelenideBase;
 import ex4_ex5.listeners.AllureAttachListener;
 import ex4_ex5.page_objects.LoginPage;
@@ -12,7 +13,6 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 
-import static com.codeborne.selenide.Selenide.close;
 import static ex4_ex5.enums.LoginPageEnum.LOGIN;
 import static ex4_ex5.enums.LoginPageEnum.PASSWORD;
 
@@ -33,7 +33,7 @@ public class SlidersTest extends SelenideBase {
     @AfterMethod(alwaysRun = true)
     //Delay 3sec in last test case.
     public void shutDown() {
-        close();
+        WebDriverRunner.getWebDriver().close();
     }
 
     @Test

@@ -1,9 +1,6 @@
 package ex4_ex5.page_objects;
 
-import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
+import com.codeborne.selenide.*;
 import ex4_ex5.enums.DatesPageAndSlidersEnum;
 import ex4_ex5.enums.LoginPageEnum;
 import ex4_ex5.enums.ServiceElementsEnum;
@@ -79,12 +76,12 @@ public class LoginPage {
 
     @Step
     public void checkImagesExistance() {
-        icons.shouldHaveSize(4).forEach(icon -> icon.shouldBe(visible));
+        icons.shouldHave(CollectionCondition.size(4)).forEach(icon -> icon.shouldBe(visible));
     }
 
     @Step
     public void checkTextBelowIcons(TextsBelowImagesEnum[] benefits) {
-        textsBelowIcons.shouldHaveSize(4).forEach(text -> text.shouldBe(visible));
+        textsBelowIcons.shouldHave(CollectionCondition.size(4)).forEach(text -> text.shouldBe(visible));
         for (int i = 0; i < textsBelowIcons.size(); i++) {
             assertEquals(textsBelowIcons.get(i).getText().replaceAll("\n", " "), benefits[i].expectedText);
         }
